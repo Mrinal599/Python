@@ -1,0 +1,16 @@
+# Program : tupleremove.py 
+# Purpose : Remove the empty tuple and print the result. 
+
+# list of tuples function to remove empty tuples 
+# using list comprehension 
+def Remove(tuples): 
+	tuples = [t for t in tuples if t] 
+	return tuples 
+
+# Driver Code 
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita'), 
+		('krishna', 'akbar', '45'), ('',''),()] 
+print(Remove(tuples)) 
+
+# Author : Mrinal Kumar 
+# Version : 1.0
